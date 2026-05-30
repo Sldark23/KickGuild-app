@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KickGuild</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h1>KickGuild</h1>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item active" data-view="home">Home</a>
+                <a href="#" class="nav-item" data-view="friends">Amigos</a>
+                <a href="#" class="nav-item" data-view="clusters">Clusters</a>
+                <a href="#" class="nav-item" data-view="messages">Mensagens</a>
+                <a href="#" class="nav-item" data-view="notifications">Notificações</a>
+                <a href="#" class="nav-item" data-view="profile">Perfil</a>
+                <a href="#" class="nav-item" data-view="settings">Configurações</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="main-header">
+                <div class="header-actions">
+                    <button id="sidebar-toggle" class="btn-icon">☰</button>
+                    <div class="user-info">
+                        <img src="assets/default-avatar.png" alt="Avatar" class="avatar">
+                        <span>Fernando</span>
+                    </div>
+                </div>
+                <h1 id="page-title">Home</h1>
+            </header>
+
+            <section id="view-container">
+                <!-- Home Feed -->
+                <div class="view active" id="home-view">
+                    <div class="feed-header">
+                        <h2>Feed</h2>
+                        <textarea id="post-input" placeholder="O que está acontecendo?"></div>
+                        <button id="post-button" class="btn-primary">Publicar</button>
+                    </div>
+                    <div id="feed-list" class="feed">
+                        <!-- Posts will be inserted here -->
+                    </div>
+                </div>
+
+                <!-- Friends View -->
+                <div class="view" id="friends-view">
+                    <h2>Amigos</h2>
+                    <p>Lista de amigos aparecerá aqui.</p>
+                </div>
+
+                <!-- Clusters View -->
+                <div class="view" id="clusters-view">
+                    <h2>Clusters</h2>
+                    <p>Seus clusters aparecerão aqui.</p>
+                </div>
+
+                <!-- Messages View -->
+                <div class="view" id="messages-view">
+                    <h2>Mensagens</h2>
+                    <p>Conversas recentes aparecerão aqui.</p>
+                </div>
+
+                <!-- Notifications View -->
+                <div class="view" id="notifications-view">
+                    <h2>Notificações</h2>
+                    <p>Notificações aparecerão aqui.</p>
+                </div>
+
+                <!-- Profile View -->
+                <div class="view" id="profile-view">
+                    <h2>Perfil</h2>
+                    <p>Informações do perfil.</p>
+                </div>
+
+                <!-- Settings View -->
+                <div class="view" id="settings-view">
+                    <h2>Configurações</h2>
+                    <p>Opções de configuração.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
